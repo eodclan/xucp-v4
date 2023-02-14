@@ -321,24 +321,3 @@ const WHITELIST_HEADER = "Whitelist Fragen &Uuml;bersicht";
 // ************************************************************************************//
 const BBCODE_EDITOR = "Zitat";
 const BBCODE_EDITOR_INFO = "1 schrieb:";
-// ************************************************************************************//
-// * German Language Section - Uptime System
-// ************************************************************************************//
-const UPTIME_SYSTEM_HEADER = "Dienststatus";
-const UPTIME_MYSQL = "Datenbank";
-const UPTIME_HOMEPAGE = "Homepage";
-const UPTIME_TEAMSPEAK = "Teamspeak";
-const UPTIME_MAIL = "Mail";
-const UPTIME_SUPPORT = "Support";
-const UPTIME_SUPPORT_INFO = "Mo-Do & Sa Abends";
-const UPTIME_WHITELIST = "Whitelist";
-const UPTIME_WHITELIST_INFO = "Di/Do/Sa 18:00-20:00 Uhr";
-const UPTIME_SERVICE = "Service";
-const UPTIME_STATUS = "Status";
-const UPTIME_UP = "UP";
-const UPTIME_DOWN = "DOWN";
-const UPTIME_GTA_ONLINE = "GTA Online";
-const UPTIME_SOCIAL_CLUB = "Social Club";
-const UPTIME_LAUNCHER_AUTHENTIFIZIERUNG = "Launcher Authentifizierung";
-const UPTIME_ROCKSTAR = "ROCKSTAR-GAMES";
-const UPTIME_CLOUD = "Cloud-Service";

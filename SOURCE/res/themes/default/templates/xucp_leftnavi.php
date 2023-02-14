@@ -60,13 +60,6 @@ function xucp_navi_logged(): void
 				</li>
 				<li class='menu-label'>Server</li>
 				<li>
-					<a href='/vendor/usercp/uptime/index.php'>
-						<div class='parent-icon'><i class='bx bx-cookie'></i>
-						</div>
-						<div class='menu-title'>".UPTIME_SYSTEM_HEADER."</div>
-					</a>
-				</li>
-				<li>
 					<a href='javascript:;' class='has-arrow'>
 						<div class='parent-icon'><i class='bx bx-support'></i>
 						</div>
