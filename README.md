@@ -2,15 +2,34 @@
 In this xUser Control Panel Free V4, it is a completely new development.
 
 xUCP Free V4 (Open Source) Readme
-
 (C) 2023 DerStr1k3r.de
-
 https://derstr1k3r.de
-
 https://discord.gg/xg5mnYUWch
 
-## When release?
-* Soon...
+
+## Prerequisite for using the xUCP Free V4:
+*  1. MySQL servers
+*  2. Web server(XAMPP is not supported!)
+*  3. Php 8.1 or newer
+*  4. PHP - PDO 8.1
+
+## Functions of the xUCP Free V4:
+*  1. Login & Register System
+*  2. Staff Tools ( User Changer, Playerlist, News Creator, Rules Manager, Whitelist Manager, Keyboard Manager )
+*  3. Language System ( English & German )
+*  4. Support system
+*  5. Edit profile
+*  6. Site Settings
+*  7. Clients & Servers
+*  8. Server Status System
+*  9. BB-Code-Editor System
+* 10. Game Server Status System
+* 11. Upgrade Notice System
+* 12. Class Admin Settings System
+* 13. Themes System with 1 colors
+* 14. Team Control System
+* 15. Web Site System: Homepage
+* 16. Web Site System: Imprint
 
 
 best regards
