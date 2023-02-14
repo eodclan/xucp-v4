@@ -61,7 +61,6 @@ echo "
 						                        <div class='card radius-15'>
 							                        <div class='card-body text-center'>
 								                        <div class='p-4 border radius-15'>
-									                        <img src='/res/themes/default/assets/images/teamcontrol-images/xucp_supporter.png' width='634' height='259' class='rounded-circle shadow' alt=''>
 									                        <h5 class='mb-0 mt-5'>".$_SESSION['xucp_uname']['secure_uname']."</h5>
 									                        <p class='mb-3'>".TEAM_CONTROL_SUPPORTER_NOTE."</p>
 									                        <div class='d-grid'>
@@ -120,7 +119,6 @@ echo "
 						                        <div class='card radius-15'>
 							                        <div class='card-body text-center'>
 								                        <div class='p-4 border radius-15'>
-									                        <img src='/res/themes/default/assets/images/teamcontrol-images/xucp_support_leader.png' width='634' height='259' class='rounded-circle shadow' alt=''>
 									                        <h5 class='mb-0 mt-5'>".$_SESSION['xucp_uname']['secure_uname']."</h5>
 									                        <p class='mb-3'>".TEAM_CONTROL_SUPPORT_LEADER_NOTE."</p>
 									                        <div class='d-grid'>
@@ -169,7 +167,6 @@ echo "
 						                        <div class='card radius-15'>
 							                        <div class='card-body text-center'>
 								                        <div class='p-4 border radius-15'>
-									                        <img src='/res/themes/default/assets/images/teamcontrol-images/xucp_project_leader.png' width='634' height='259' class='rounded-circle shadow' alt=''>
 									                        <h5 class='mb-0 mt-5'>".$_SESSION['xucp_uname']['secure_uname']."</h5>
 									                        <p class='mb-3'>".TEAM_CONTROL_PROJECT_LEADER_NOTE."</p>
 									                        <div class='d-grid'>
@@ -217,5 +214,4 @@ echo "
 						</div>
 					</div>
 				</div>";
-
 xucp_foot_logged();
