@@ -2,8 +2,11 @@
 In this xUser Control Panel Free V4, it is a completely new development.
 
 xUCP Free V4 (Open Source) Readme
+
 (C) 2023 DerStr1k3r.de
+
 https://derstr1k3r.de
+
 https://discord.gg/xg5mnYUWch
 
 
@@ -24,12 +27,11 @@ https://discord.gg/xg5mnYUWch
 *  8. Server Status System
 *  9. BB-Code-Editor System
 * 10. Game Server Status System
-* 11. Upgrade Notice System
-* 12. Class Admin Settings System
-* 13. Themes System with 1 colors
-* 14. Team Control System
-* 15. Web Site System: Homepage
-* 16. Web Site System: Imprint
+* 11. Class Admin Settings System
+* 12. Themes System with 1 colors
+* 13. Team Control System
+* 14. Web Site System: Homepage
+* 15. Web Site System: Imprint
 
 
 best regards
