@@ -2,7 +2,9 @@
 In this xUser Control Panel, it is a completely new development.
 
 (C) 2023 DerStr1k3r.de
+
 https://derstr1k3r.de
+
 https://discord.gg/xg5mnYUWch
 
 What's Changed
