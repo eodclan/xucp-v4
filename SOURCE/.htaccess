@@ -1,9 +1,9 @@
 Options -Indexes
 
 RewriteEngine On
-Redirect /include/ /404.php
-Redirect /include/config/ /404.php
-Redirect /include/language/ /404.php
+Redirect /app/ /404.php
+Redirect /app/config/ /404.php
+Redirect /app/language/ /404.php
 
 ErrorDocument 400     /404.php
 ErrorDocument 401     /404.php
