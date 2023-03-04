@@ -4,7 +4,7 @@
 // ************************************************************************************//
 // * Author: DerStr1k3r
 // ************************************************************************************//
-// * Version: 4.0
+// * Version: 4.1
 // *
 // * Copyright (c) 2023 DerStr1k3r. All rights reserved.
 // ************************************************************************************//
@@ -14,17 +14,17 @@ if ( $_SERVER['REQUEST_METHOD']=='GET' && realpath(__FILE__) == realpath( $_SERV
 	header( 'HTTP/1.0 403 Forbidden', TRUE, 403 );
 	setCookie("PHPSESSID", "", 0x7fffffff,  "/");
   	session_destroy();
-	die( header( 'location: /404.php' ) );
+	die( header( 'location: /vendor/webcp/404/index.php' ) );
 }
 // ************************************************************************************//
-// * Class: Supporter ( default = 25 )
+// * Class: Supporter ( default = 20 )
 // ************************************************************************************//
-const UC_CLASS_SUPPORTER = "25";
+const UC_CLASS_SUPPORTER = "20";
 // ************************************************************************************//
 // * Class: Supporter Leader ( default = 50 )
 // ************************************************************************************//
 const UC_CLASS_SUPPORTER_LEADER = "50";
 // ************************************************************************************//
-// * Class: Supporter ( default = 75 )
+// * Class: Supporter ( default = 120 )
 // ************************************************************************************//
-const UC_CLASS_PROJECT_MANAGEMENT = "75";
+const UC_CLASS_PROJECT_MANAGEMENT = "120";

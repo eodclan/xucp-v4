@@ -1,18 +1,15 @@
 Options -Indexes
 
 RewriteEngine On
-Redirect /include/ /404.php
-Redirect /include/config/ /404.php
-Redirect /include/language/ /404.php
 
-ErrorDocument 400     /404.php
-ErrorDocument 401     /404.php
-ErrorDocument 402     /404.php
-ErrorDocument 405     /404.php
-ErrorDocument 403     /404.php
-ErrorDocument 404     /404.php
-ErrorDocument 500     /404.php
-ErrorDocument 505     /505.php
+ErrorDocument 400     /vendor/webcp/404/index.php
+ErrorDocument 401     /vendor/webcp/404/index.php
+ErrorDocument 402     /vendor/webcp/404/index.php
+ErrorDocument 405     /vendor/webcp/404/index.php
+ErrorDocument 403     /vendor/webcp/404/index.php
+ErrorDocument 404     /vendor/webcp/404/index.php
+ErrorDocument 500     /vendor/webcp/404/index.php
+ErrorDocument 505     /vendor/webcp/505/index.php
 
 # Ban Typical Vulnerability Scanners and others
 # Kick out Script Kiddies

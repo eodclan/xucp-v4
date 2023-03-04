@@ -4,7 +4,7 @@
 // ************************************************************************************//
 // * Author: DerStr1k3r
 // ************************************************************************************//
-// * Version: 4.0
+// * Version: 4.1
 // *
 // * Copyright (c) 2023 DerStr1k3r. All rights reserved.
 // ************************************************************************************//
@@ -14,7 +14,7 @@ if ( $_SERVER['REQUEST_METHOD']=='GET' && realpath(__FILE__) == realpath( $_SERV
 	header( 'HTTP/1.0 403 Forbidden', TRUE, 403 );
 	setCookie("PHPSESSID", "", 0x7fffffff,  "/");
   	session_destroy();
-	die( header( 'location: /404.php' ) );
+	die( header( 'location: /vendor/webcp/404/index.php' ) );
 }
 /**
  * @param string $SITE_SUB_ICON
@@ -31,7 +31,7 @@ function xucp_head_logged(string $SITE_SUB_ICON = "", string $SITE_SUB_TITLE = "
 <html lang='".$_SESSION['xucp_uname']['site_settings_lang']."'>
 <head>
 	<!-- ####################################################### -->
-	<!-- #   Powered by xUCP Free V4.0                         # -->
+	<!-- #   Powered by xUCP Free V4.1                         # -->
 	<!-- #   Copyright (c) 2023 DerStr1k3r.                    # -->
 	<!-- #   All rights reserved.                              # -->
 	<!-- ####################################################### -->
@@ -98,7 +98,7 @@ function xucp_head_no_logged(string $SITE_SUB_ICON = "", string $SITE_SUB_TITLE 
 <html lang='".$_SESSION['xucp_uname']['site_settings_lang']."'>
 <head>
 	<!-- ####################################################### -->
-	<!-- #   Powered by xUCP Free V4.0                         # -->
+	<!-- #   Powered by xUCP Free V4.1                         # -->
 	<!-- #   Copyright (c) 2023 DerStr1k3r.                    # -->
 	<!-- #   All rights reserved.                              # -->
 	<!-- ####################################################### -->
@@ -144,7 +144,7 @@ echo "
 							</div>
 						</a>
 						<ul class='dropdown-menu dropdown-menu-end'>
-							<li><a class='dropdown-item' href='/index.php'><i class='bx bx-home'></i><span>".HOME_NOLOGGED."</span></a>
+							<li><a class='dropdown-item' href='/vendor/webcp/home/index.php'><i class='bx bx-home'></i><span>".HOME_NOLOGGED."</span></a>
 							</li>
 							<li><a class='dropdown-item' href='/vendor/webcp/rules/index.php'><i class='bx bx-message-detail'></i><span>".RULES."</span></a>
 							</li>

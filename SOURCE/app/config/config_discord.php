@@ -4,7 +4,7 @@
 // ************************************************************************************//
 // * Author: DerStr1k3r
 // ************************************************************************************//
-// * Version: 4.0
+// * Version: 4.1
 // *
 // * Copyright (c) 2023 DerStr1k3r. All rights reserved.
 // ************************************************************************************//
@@ -14,7 +14,7 @@ if ( $_SERVER['REQUEST_METHOD']=='GET' && realpath(__FILE__) == realpath( $_SERV
 	header( 'HTTP/1.0 403 Forbidden', TRUE, 403 );
 	setCookie("PHPSESSID", "", 0x7fffffff,  "/");
   	session_destroy();
-	die( header( 'location: /404.php' ) );
+	die( header( 'location: /vendor/webcp/404/index.php' ) );
 }
 // ************************************************************************************//
 // * Discord Web-Hook Settings
@@ -29,4 +29,4 @@ const DCWEBHOOK_AVATAR = "https://xucp-v4.derstr1k3r.de/res/themes/default/asset
 // ************************************************************************************//
 // * Discord Web-Hook Botname Settings
 // ************************************************************************************//
-const DCWEBHOOK_NAME = "DerStr1k3r.de | xUCP Plus V4 Bot";
+const DCWEBHOOK_NAME = "DerStr1k3r.de | xUCP Free V4 Bot";
