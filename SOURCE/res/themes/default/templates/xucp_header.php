@@ -4,7 +4,7 @@
 // ************************************************************************************//
 // * Author: DerStr1k3r
 // ************************************************************************************//
-// * Version: 4.1
+// * Version: 4.1.1
 // *
 // * Copyright (c) 2023 DerStr1k3r. All rights reserved.
 // ************************************************************************************//
@@ -31,7 +31,7 @@ function xucp_head_logged(string $SITE_SUB_ICON = "", string $SITE_SUB_TITLE = "
 <html lang='".$_SESSION['xucp_uname']['site_settings_lang']."'>
 <head>
 	<!-- ####################################################### -->
-	<!-- #   Powered by xUCP Free V4.1                         # -->
+	<!-- #   Powered by xUCP Free V4.1.1                       # -->
 	<!-- #   Copyright (c) 2023 DerStr1k3r.                    # -->
 	<!-- #   All rights reserved.                              # -->
 	<!-- ####################################################### -->
@@ -98,7 +98,7 @@ function xucp_head_no_logged(string $SITE_SUB_ICON = "", string $SITE_SUB_TITLE 
 <html lang='".$_SESSION['xucp_uname']['site_settings_lang']."'>
 <head>
 	<!-- ####################################################### -->
-	<!-- #   Powered by xUCP Free V4.1                         # -->
+	<!-- #   Powered by xUCP Free V4.1.1                       # -->
 	<!-- #   Copyright (c) 2023 DerStr1k3r.                    # -->
 	<!-- #   All rights reserved.                              # -->
 	<!-- ####################################################### -->

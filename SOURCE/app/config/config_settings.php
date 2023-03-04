@@ -4,7 +4,7 @@
 // ************************************************************************************//
 // * Author: DerStr1k3r
 // ************************************************************************************//
-// * Version: 4.1
+// * Version: 4.1.1
 // *
 // * Copyright (c) 2023 DerStr1k3r. All rights reserved.
 // ************************************************************************************//
@@ -26,4 +26,4 @@ const SITE_EMAIL = "noreplay@xxx.de";
 // SHA-512 Cryptographic Hash Algorithm
 const SITE_LOGIN_SECURE_ALGO = "sha512";
 // Your key words
-const SITE_LOGIN_SECURE_ALGO_ENCRYPT = "xUCP Plus V4";
+const SITE_LOGIN_SECURE_ALGO_ENCRYPT = "xUCP Free V4";
