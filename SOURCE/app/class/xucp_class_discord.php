@@ -4,19 +4,19 @@
 // ************************************************************************************//
 // * Author: DerStr1k3r
 // ************************************************************************************//
-// * Version: 4.1.2
+// * Version: 4.2
 // *
 // * Copyright (c) 2023 DerStr1k3r. All rights reserved.
 // ************************************************************************************//
 // * License Typ: GNU GPLv3
 // ************************************************************************************//
-class Discord {
+#[AllowDynamicProperties] class Discord {
     public function __construct() {
         $this->webhook = DCWEBHOOK_URL;
         $this->head = "Content-Type: application/json; charset=utf-8";
     }
 
-    public function Send($Msg)
+    public function Send($Msg): bool|array|string
     {
         try {
             $xucp_url = $this->webhook;
@@ -45,8 +45,7 @@ class Discord {
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
             curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($POST));
-            $response   = curl_exec($ch);
-            return $response;
+            return curl_exec($ch);
             curl_close($ch);
             if ($response == '200') {
                 return array(true, '');

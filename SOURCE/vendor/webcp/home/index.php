@@ -4,7 +4,7 @@
 // ************************************************************************************//
 // * Author: DerStr1k3r
 // ************************************************************************************//
-// * Version: 4.1.2
+// * Version: 4.2
 // * 
 // * Copyright (c) 2023 DerStr1k3r. All rights reserved.
 // ************************************************************************************//
@@ -48,7 +48,7 @@ if($select_stmt->rowCount() > 0){
                         <div class='card'>
                             <div class='card-header'><h2>".NEWS." ".$title."</h2></div>
                             <div class='card-body'>
-                                <p>".format_comment($short_content)."</p>
+                                <p>".xucp_bbcode_format($short_content)."</p>
                             </div>
                         </div>
                     </div>

@@ -4,7 +4,7 @@
 // ************************************************************************************//
 // * Author: DerStr1k3r
 // ************************************************************************************//
-// * Version: 4.1.2
+// * Version: 4.2
 // *
 // * Copyright (c) 2023 DerStr1k3r. All rights reserved.
 // ************************************************************************************//
@@ -33,9 +33,9 @@ if(isset($_REQUEST['xucp_submit']))
     $site_fivem_section 	= strip_tags($_REQUEST['xucp_site_dl_section']);
     $site_redm_section 	= strip_tags($_REQUEST['xucp_site_fivem_section']);
     $site_teamspeak 		= strip_tags($_REQUEST['xucp_site_teamspeak']);
-    $site_gservername 	= strip_tags($_REQUEST['xucp_site_gservername']);
-    $site_gserverip 		= strip_tags($_REQUEST['xucp_site_gserverip']);
-    $site_gserverport 	= strip_tags($_REQUEST['xucp_site_gserverport']);
+    $site_gservername 	= strip_tags($_REQUEST['xucp_site_gserver_name']);
+    $site_gserverip 		= strip_tags($_REQUEST['xucp_site_gserver_ip']);
+    $site_gserverport 	= strip_tags($_REQUEST['xucp_site_gserver_port']);
     $site_themes 			= strip_tags($_REQUEST['xucp_site_themes']);
 
     if(empty($site_online)){
@@ -68,7 +68,7 @@ if(isset($_REQUEST['xucp_submit']))
         {
             if(!isset($errorMsg))
             {
-                $insert_stmt=$db->prepare("UPDATE `xucp_config` SET `site_online` = :xucp_site_online, `site_name` = :xucp_site_name, `site_dl_section` = :xucp_site_dl_section, `site_rage_section` = :xucp_site_rage_section, `site_altv_section` = :xucp_site_altv_section, `site_fivem_section` = :xucp_site_fivem_section, `site_redm_section` = :xucp_site_redm_section, `site_teamspeak` = :xucp_site_teamspeak, `site_gservername` = :xucp_site_gservername, `site_gserverip` = :xucp_site_gserverip, `site_gserverport` = :xucp_site_gserverport, `site_lang` = :xucp_site_lang, `site_themes` = :xucp_site_themes WHERE `id` = ".$site_config_uid);
+                $insert_stmt=$db->prepare("UPDATE `xucp_config` SET `site_online` = :xucp_site_online, `site_name` = :xucp_site_name, `site_dl_section` = :xucp_site_dl_section, `site_rage_section` = :xucp_site_rage_section, `site_altv_section` = :xucp_site_altv_section, `site_fivem_section` = :xucp_site_fivem_section, `site_redm_section` = :xucp_site_redm_section, `site_teamspeak` = :xucp_site_teamspeak, `site_gservername` = :xucp_site_gserver_name, `site_gserverip` = :xucp_site_gserver_ip, `site_gserverport` = :xucp_site_gserver_port, `site_lang` = :xucp_site_lang, `site_themes` = :xucp_site_themes WHERE `id` = ".$site_config_uid);
 
                 if($insert_stmt->execute(array(
                     ':xucp_site_online'	=>$site_online,
@@ -80,9 +80,9 @@ if(isset($_REQUEST['xucp_submit']))
                     ':xucp_site_fivem_section'=>$site_fivem_section,
                     ':xucp_site_redm_section'=>$site_redm_section,
                     ':xucp_site_teamspeak'=>$site_teamspeak,
-                    ':xucp_site_gservername'=>$site_gservername,
-                    ':xucp_site_gserverip'=>$site_gserverip,
-                    ':xucp_site_gserverport'=>$site_gserverport,
+                    ':xucp_site_gserver_name'=>$site_gservername,
+                    ':xucp_site_gserver_ip'=>$site_gserverip,
+                    ':xucp_site_gserver_port'=>$site_gserverport,
                     ':xucp_site_themes'=>$site_themes))){
 
                     $doneMsg=SITECONFIG_DONE;
@@ -233,7 +233,7 @@ echo "
 								<div class='col-lg-10 col-md-10 col-sm-8 col-xs-7'>
 									<div class='form-group'>
 										<div class='form-line'>
-											<input type='text' name='xucp_site_gservername' size='12' maxlength='64' class='form-control' placeholder='".SITECONFIG_GSERVERNAME."' value='" . $conf_set["site_gservername"]. "' required>
+											<input type='text' name='xucp_site_gserver_name' size='12' maxlength='64' class='form-control' placeholder='".SITECONFIG_GSERVERNAME."' value='" . $conf_set["site_gservername"]. "' required>
 										</div>
 									</div>
 								</div>
@@ -245,7 +245,7 @@ echo "
 								<div class='col-lg-10 col-md-10 col-sm-8 col-xs-7'>
 									<div class='form-group'>
 										<div class='form-line'>
-											<input type='text' name='xucp_site_gserverip' size='12' maxlength='64' class='form-control' placeholder='".SITECONFIG_GSERVERIP."' value='" . $conf_set["site_gserverip"]. "' required>
+											<input type='text' name='xucp_site_gserver_ip' size='12' maxlength='64' class='form-control' placeholder='".SITECONFIG_GSERVERIP."' value='" . $conf_set["site_gserverip"]. "' required>
 										</div>
 									</div>
 								</div>
@@ -257,7 +257,7 @@ echo "
 								<div class='col-lg-10 col-md-10 col-sm-8 col-xs-7'>
 									<div class='form-group'>
 										<div class='form-line'>
-											<input type='text' name='xucp_site_gserverport' size='12' maxlength='64' class='form-control' placeholder='".SITECONFIG_GSERVERPORT."' value='" . $conf_set["site_gserverport"]. "' required>
+											<input type='text' name='xucp_site_gserver_port' size='12' maxlength='64' class='form-control' placeholder='".SITECONFIG_GSERVERPORT."' value='" . $conf_set["site_gserverport"]. "' required>
 										</div>
 									</div>
 								</div>

@@ -4,7 +4,7 @@
 // ************************************************************************************//
 // * Author: DerStr1k3r
 // ************************************************************************************//
-// * Version: 4.1.2
+// * Version: 4.2
 // * 
 // * Copyright (c) 2023 DerStr1k3r. All rights reserved.
 // ************************************************************************************//
@@ -44,7 +44,7 @@ echo "
                                     <p class='card-title-desc'>".$title."</p>
                                 </div>
                                 <div class='card-body'>
-									".format_comment($short_content)."
+									".xucp_bbcode_format($short_content)."
                                 </div>
                             </div>
                         </div>

@@ -4,7 +4,7 @@
 // ************************************************************************************//
 // * Author: DerStr1k3r
 // ************************************************************************************//
-// * Version: 4.1.2
+// * Version: 4.2
 // * 
 // * Copyright (c) 2023 DerStr1k3r. All rights reserved.
 // ************************************************************************************//
@@ -133,7 +133,7 @@ echo "
                                                     if($select_stmt->rowCount() > 0){
                                                         echo "
                                                             <h5 class='font-size-16 mb-1'>".htmlentities($user_sig['username'], ENT_QUOTES, 'UTF-8')."</h5>
-                                                            <p class='text-muted font-size-13'>".format_comment($user_sig['usersig'])."</p>";
+                                                            <p class='text-muted font-size-13'>".xucp_bbcode_format($user_sig['usersig'])."</p>";
                                                     }
 													echo "
                                                         </div>
@@ -192,7 +192,7 @@ echo "
 
                                                             if($select_stmt->rowCount() > 0){
                                                                 echo "
-                                                                    <p class='mb-2'>".format_comment($u_sig['usersig'])."</p>";
+                                                                    <p class='mb-2'>".xucp_bbcode_format($u_sig['usersig'])."</p>";
                                                             }
 															echo "
                                                                 </div>

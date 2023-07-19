@@ -4,7 +4,7 @@
 // ************************************************************************************//
 // * Author: DerStr1k3r
 // ************************************************************************************//
-// * Version: 4.1.2
+// * Version: 4.2
 // *
 // * Copyright (c) 2023 DerStr1k3r. All rights reserved.
 // ************************************************************************************//
@@ -31,7 +31,7 @@ function xucp_head_logged(string $SITE_SUB_ICON = "", string $SITE_SUB_TITLE = "
 <html lang='".$_SESSION['xucp_uname']['site_settings_lang']."'>
 <head>
 	<!-- ####################################################### -->
-	<!-- #   Powered by xUCP Free V4.1.2                       # -->
+	<!-- #   Powered by xUCP Free V4.2                         # -->
 	<!-- #   Copyright (c) 2023 DerStr1k3r.                    # -->
 	<!-- #   All rights reserved.                              # -->
 	<!-- ####################################################### -->
@@ -57,7 +57,7 @@ function xucp_head_logged(string $SITE_SUB_ICON = "", string $SITE_SUB_TITLE = "
 	header("Strict-Transport-Security: max-age=31536000");
 	header("Referrer-Policy: origin-when-cross-origin");
 	header("Expect-CT: max-age=7776000, enforce");
-	header("Feature-Policy: vibrate 'self'; usermedia *; sync-xhr 'self'");
+	header("Feature-Policy: vibrate 'self'; user-media *; sync-xhr 'self'");
 	echo"
 </head>
 <body class='".$_SESSION['xucp_uname']['site_settings_themes']."'>
@@ -98,7 +98,7 @@ function xucp_head_no_logged(string $SITE_SUB_ICON = "", string $SITE_SUB_TITLE 
 <html lang='".$_SESSION['xucp_uname']['site_settings_lang']."'>
 <head>
 	<!-- ####################################################### -->
-	<!-- #   Powered by xUCP Free V4.1.2                       # -->
+	<!-- #   Powered by xUCP Free V4.2                         # -->
 	<!-- #   Copyright (c) 2023 DerStr1k3r.                    # -->
 	<!-- #   All rights reserved.                              # -->
 	<!-- ####################################################### -->
@@ -122,7 +122,7 @@ function xucp_head_no_logged(string $SITE_SUB_ICON = "", string $SITE_SUB_TITLE 
 	header("Strict-Transport-Security: max-age=31536000");
 	header("Referrer-Policy: origin-when-cross-origin");
 	header("Expect-CT: max-age=7776000, enforce");
-	header("Feature-Policy: vibrate 'self'; usermedia *; sync-xhr 'self'");
+	header("Feature-Policy: vibrate 'self'; user-media *; sync-xhr 'self'");
 echo "
 </head>
 <body class='".$_SESSION['xucp_uname']['site_settings_themes']."'>

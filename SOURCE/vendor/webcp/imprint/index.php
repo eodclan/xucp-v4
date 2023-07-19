@@ -56,7 +56,7 @@ if($select_stmt->rowCount() > 0){
 														".IMPRINT_PHONE."
 													</h6>
 													<div class='input-group'>
-														".format_comment($row['phone_number'])."
+														".xucp_bbcode_format($row['phone_number'])."
 													</div>	
 												</td>						
 											</tr>

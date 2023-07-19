@@ -4,7 +4,7 @@
 // ************************************************************************************//
 // * Author: DerStr1k3r
 // ************************************************************************************//
-// * Version: 4.1.2
+// * Version: 4.2
 // *
 // * Copyright (c) 2023 DerStr1k3r. All rights reserved.
 // ************************************************************************************//
@@ -52,7 +52,7 @@ if($select_stmt->rowCount() > 0){
 								            <div class='form-line'>
 									            <label  class='col-sm-3 col-form-label'>".SUPPORTSUBJECT."</label>
 									            <div class='col-sm-12 form-control'>
-									                ".format_comment($row["bug"])."
+									                ".xucp_bbcode_format($row["bug"])."
 									            </div>
 								            </div>							
                                         </div>
@@ -60,7 +60,7 @@ if($select_stmt->rowCount() > 0){
 								            <div class='form-line'>
 									            <label  class='col-sm-3 col-form-label'>".SUPPORTMSG."</label>
 									            <div class='col-sm-12 form-control'>
-									                ".format_comment($row["msg"])."									
+									                ".xucp_bbcode_format($row["msg"])."									
 									            </div>
 								            </div>							
                                         </div>
