@@ -10,7 +10,10 @@
 // ************************************************************************************//
 // * License Typ: GNU GPLv3
 // ************************************************************************************//
-#[AllowDynamicProperties] class Discord {
+class Discord {
+    private string $webhook;
+    private string $head;
+
     public function __construct() {
         $this->webhook = DCWEBHOOK_URL;
         $this->head = "Content-Type: application/json; charset=utf-8";
