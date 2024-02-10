@@ -2,8 +2,8 @@
 In this xUser Control Panel Free V4.2, it is a completely new development.
 
 xUCP Free V4.2 (Open Source) Readme
-*  (C) 2023 DerStr1k3r.de
-*  https://derstr1k3r.de
+*  (C) 2023 - 2024 DerStr1k3r.com
+*  https://derstr1k3r.com
 *  https://discord.gg/xg5mnYUWch
 
 ## Prerequisite for using the xUCP Free V4.2:
